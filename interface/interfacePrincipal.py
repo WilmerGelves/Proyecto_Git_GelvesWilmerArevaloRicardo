@@ -1,4 +1,4 @@
-
+import interface.interfaceSecundaria as secundaria
 import funciones.globals as globals
 
 def menuPrincipal(op):
@@ -21,7 +21,7 @@ def menuPrincipal(op):
         else:
             match (op):
                 case 1: 
-                    pass
+                    secundaria.gestionSucursal(0)
                 case 2: 
                     globals.borrar_pantalla()
                     print('Fue un gusto servirle...Vuelva pronto.')
