@@ -23,3 +23,15 @@ def AddData(*param):
         rwf.seek(0)
         json.dump(data_file,rwf,indent=4)
 
+def ReadFile():
+    with open(MY_DATABASE,"r") as rf:
+        return json.load(rf)
+    
+def checkFile(*param):
+    data = list(param)
+    if(os.path.isfile(MY_DATABASE)):
+        if(len(param)):
+            data[0].update(ReadFile())
+    else:
+        if(len(param)):
+            NewFile(data[0])
