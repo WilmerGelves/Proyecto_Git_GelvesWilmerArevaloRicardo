@@ -1,5 +1,6 @@
 
 import funciones.globals as globals
+
 def menuPrincipal(op):
     globals.borrar_pantalla()
     encabezdo = """
@@ -7,7 +8,7 @@ def menuPrincipal(op):
     * Menu Pricipal *
     *****************
     """
-    options = '\t1.Registrar Sucursal.\n\t2.Eliminar Sucursal.\n\t4.Sucursales.\n\t5.Salir.'
+    options = '\t1.Gestión de sucursales.\n\t2.Salir.'
     if (op != 3):
         print(encabezdo)
         print(options)
@@ -22,13 +23,10 @@ def menuPrincipal(op):
                 case 1: 
                     pass
                 case 2: 
-                    pass
-                case 3: 
                     globals.borrar_pantalla()
                     print('Fue un gusto servirle...Vuelva pronto.')
                     globals.pausar_pantalla()
-                case 4: 
-                    pass
+                
                 case _:
                     globals.borrar_pantalla()
                     print('Está ingresando una opción inválida...Intente nuevamente.')
