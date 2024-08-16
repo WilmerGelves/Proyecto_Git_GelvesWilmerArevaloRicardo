@@ -1,5 +1,5 @@
 
-
+import funciones.globals as globals
 def menuPrincipal(op):
     globals.borrar_pantalla()
     encabezdo = """
@@ -35,5 +35,3 @@ def menuPrincipal(op):
                     globals.pausar_pantalla()
                     menuPrincipal(0)
 
-if __name__ == '__main__':
-    menuPrincipal(0)
