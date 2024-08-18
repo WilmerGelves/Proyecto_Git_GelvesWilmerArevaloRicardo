@@ -1,0 +1,12 @@
+{
+    "data": {
+        "12345": {
+            "codSucursal": "12345",
+            "nombreSucursal": "nueva avenida"
+        },
+        "4556": {
+            "codSucursal": "4556",
+            "nombreSucursal": "354"
+        }
+    }
+}
